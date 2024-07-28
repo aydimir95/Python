@@ -73,7 +73,7 @@ first, last = naem.split()
 
 # say hello to the user by function
 #print(f"hello, {name}")
-print(f"hello, {first}")
+print(f"hello, {first}") 
 print(f"hello, {last}")
 
 
