@@ -8,7 +8,6 @@
 # coin toss to generate the random number
 
 
-'''
 import random
 
 
@@ -165,7 +164,7 @@ import sys
 if len(sys.argv) == 2:
     cowsay.cow("hello, " + sys.argv[1])
 
-'''
+
 
 # trex - for a trex to say somthing in your screen
 
