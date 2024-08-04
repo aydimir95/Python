@@ -106,7 +106,7 @@ elif len(sys.argv) > 2:
 # Print name tages
 print("hello, my name is", sys.argv[1])
 
-'''
+
 
 
 # Removed the else clause for better code readability and logic flow. However, this introduces a potential IndexError if there are too few arguments, as the script will attempt to access sys.argv[1] without checking if it exists. To prevent this, we check the number of arguments and exit the script if the count is not exactly 2 (the script name plus one additional argument).
@@ -124,3 +124,53 @@ elif len(sys.argv) > 2:
 print("hello, my name is", sys.argv[1])
 
 
+
+
+# listing the names after argv
+
+import sys
+
+if len(sys.argv) < 2:
+    sys.exit("Too few arguments")
+
+for arg in sys.argv:
+    print("hello, my name is", arg)
+
+
+
+
+# adding list length to argv
+
+import sys
+
+if len(sys.argv) < 2:
+    sys.exit("Too few arguments")
+
+for arg in sys.argv[1:-1]:
+    print("hello, my name is", arg)
+
+
+
+
+# packages - pypi.org
+
+
+# cowsay - for a cow to say something in your computer
+# pip - allows you to install packages
+
+
+import cowsay
+import sys
+
+if len(sys.argv) == 2:
+    cowsay.cow("hello, " + sys.argv[1])
+
+'''
+
+# trex - for a trex to say somthing in your screen
+
+import cowsay
+import sys
+
+if len(sys.argv) == 2:
+    cowsay.trex("hello, " + sys.argv[1])
