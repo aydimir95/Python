@@ -45,8 +45,82 @@ for card in cards:
     print(card)
 
 
+
+
+
+# statistics - library that lets you import the functions related to statistics
+
+import statistics
+
+print(statistics.mean([100, 90]))
+
+
+# command-line arguments -> you can prompt the input 
+
+# sys.argv - system argument vector -> 
+
+import sys
+
+print("hello, my name is", sys.argv[1])
+
+
+
+
+# IndexError 
+
+
+import sys
+
+try:
+    print("hello, my name is", sys.argv[1])
+except IndexError:
+    print("Too few arguments")
+
+
+
+# else
+
+import sys
+
+if len(sys.argv) < 2:
+    print("Too few arguments")
+elif len(sys.argv) > 2:
+    print("Too many arguments")
+else:
+    print("hello, my name is", sys.argv[1])
+
+
+
+
+
+# remove else
+
+import sys
+
+# Check for Errors
+if len(sys.argv) < 2:
+    print("Too few arguments")
+elif len(sys.argv) > 2:
+    print("To many arguments")
+
+# Print name tages
+print("hello, my name is", sys.argv[1])
+
 '''
 
 
-import random
+# Removed the else clause for better code readability and logic flow. However, this introduces a potential IndexError if there are too few arguments, as the script will attempt to access sys.argv[1] without checking if it exists. To prevent this, we check the number of arguments and exit the script if the count is not exactly 2 (the script name plus one additional argument).
+
+
+# sys.exit
+
+import sys
+
+if len(sys.argv) < 2:
+    sys.exit("Too few arguments")
+elif len(sys.argv) > 2:
+    sys.exit("Too many arguments")
+
+print("hello, my name is", sys.argv[1])
+
 
