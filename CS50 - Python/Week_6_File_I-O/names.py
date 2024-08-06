@@ -1,5 +1,5 @@
 names = []
-"""
+
 for _ in range(3):
     name = input("What's your name? ")
     names.append(name)
@@ -96,7 +96,4 @@ with open("names.txt") as file:
 with open("names.txt") as file:
     for line in sorted(file, reverse=True):
         print("hello,", line.rstrip())
-
-"""
-
 
