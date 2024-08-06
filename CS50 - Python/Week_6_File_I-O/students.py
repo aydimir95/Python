@@ -1,5 +1,5 @@
 
-"""
+
 with open("students.csv") as file:
     for line in file:
         row = line.rstrip().split(",")
@@ -112,5 +112,5 @@ def get_house(student):
 for student in sorted(students, key=get_house):
     print(f"{student['name']} is in {student['house']}")
 
-"""
+
 
