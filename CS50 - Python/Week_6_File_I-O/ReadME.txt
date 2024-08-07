@@ -35,3 +35,62 @@ docs.python.org/3/library/csv.html
     12.1 pillow.readthedocs.io - library 
     12.2 Opens and saves binary files - to create a gif, a video, an audio file and much more.
 
+
+
+Just finished writing my first 1000+ lines of code:
+
+
+Here is how I counted it - using terminal:
+
+$files = git ls-files
+$totalLines = 0
+foreach ($file in $files) {
+    $lineCount = (Get-Content $file | Measure-Object -Line).Lines
+    Write-Output "${file}: ${lineCount}"
+    $totalLines += $lineCount
+}
+Write-Output "Total lines: ${totalLines}"
+
+
+Here is an output:
+
+Week_0-Functions&Variables/calculator.py: 18
+Week_0-Functions&Variables/calculator_defined.py: 6
+Week_0-Functions&Variables/define_function.py: 15
+Week_0-Functions&Variables/hello_world.py: 51
+Week_1_Conditionals/1_compare.py: 35
+Week_1_Conditionals/2_grade.py: 34
+Week_1_Conditionals/3_parity.py: 46
+Week_1_Conditionals/4_house.py: 38
+Week_1_Conditionals/freecodecamp.py: 6
+Week_1_Conditionals/scrimba.py: 6
+Week_2_Loops/1_cat.py: 55
+Week_2_Loops/2_hogwarts.py: 22
+Week_2_Loops/3_students.py: 13
+Week_2_Loops/4_Lists-of-Dics.py: 17
+Week_2_Loops/5_mario.py: 48
+Week_3_Exceptions/1_number.py: 98
+Week_4_Libraries/1_generate.py: 84
+Week_4_Libraries/2_itunes-api.py: 22
+Week_4_Libraries/say.py: 4
+Week_4_Libraries/sayings.py: 9
+Week_5_Unit-Tests/.DS_Store: 7
+Week_5_Unit-Tests/calculator.py: 11
+Week_5_Unit-Tests/hello.py: 9
+Week_5_Unit-Tests/test/__init__.py: 0
+Week_5_Unit-Tests/test/test-hello.py: 7
+Week_5_Unit-Tests/test_calculator.py: 74
+Week_5_Unit-Tests/test_hello.py: 11
+Week_6_File_I-O/ReadME.txt: 20
+Week_6_File_I-O/costume1.gif: 14
+Week_6_File_I-O/costume2.gif: 17
+Week_6_File_I-O/costumes.gif: 37
+Week_6_File_I-O/costumes.py: 10
+Week_6_File_I-O/names.csv: 4
+Week_6_File_I-O/names.py: 53
+Week_6_File_I-O/names.txt: 4
+Week_6_File_I-O/students.csv: 5
+Week_6_File_I-O/students.py: 132
+Week_6_File_I-O/write-students.csv: 5
+PS C:\Users\aydim\OneDrive\Desktop\Python\CS50 - Python - Copy> Write-Output "Total lines: ${totalLines}"
+Total lines: 1053
