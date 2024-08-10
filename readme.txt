@@ -1,15 +1,13 @@
-This repository is made for me to keep track of my python learning progress.
+This repository serves as a personal log to track my progress in learning Python.
 
-Currently I'm going through CS50 Python course https://cs50.harvard.edu/python/2022 
+I'm currently working through the CS50 Python course (link: https://cs50.harvard.edu/python/2022), and I'm excited to be at week 7—almost at the finish line!
 
-And I'm at week 7, which is almost the end of the course.
+Inspired by what I've learned so far, I decided to challenge myself by building a local LLM using the Ollama model 3.
 
-So I decided to give it a try and built my own local LLM using ollama model 3.
+My immediate goal is to complete the CS50 course, finish all the assignments, and earn the Harvard Certificate.
 
-My plan is to finish the CS50 course, do all the homework, and get the Harvard Certificate.
+Next, I plan to dive into the CS50x course to deepen my understanding of programming as a whole.
 
-Then I want to take the CS50x to start understanding programming in general.
+My long-term ambition is to develop tools that automate tasks in Autodesk Revit and Civil 3D using Python.
 
-And start building tools to automate Autodesk Revit & Civil 3D using python.
-
-I'm a Civil Engineer by trade and my dream is to build an AI that would 3D model Civil Engineering projects automatically.
+As a Civil Engineer, my ultimate dream is to create an AI capable of automatically generating intelligent 3D models for Civil Engineering projects.
