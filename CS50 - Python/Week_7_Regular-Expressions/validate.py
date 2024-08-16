@@ -185,7 +185,7 @@ A|B - A or B
 """
 
 # lower the input or flag it.
-
+"""
 import re
 
 email = input("What's your email? ").strip()
@@ -194,4 +194,43 @@ if re.search(r"^\w+@\w+\.(com|edu|org|net|gov)$", email, re.IGNORECASE):
     print("Valid")
 else:
     print("Invalid")
+"""
+# Group the (optional) tollerance for dots after @ 
 
+"""
+import re
+
+email = input("What's your email? ").strip()
+
+if re.search(r"^\w+@(\w+\.)?\w+\.(com|edu|org|net|gov)$", email, re.IGNORECASE):
+    print("Valid")
+else:
+    print("Invalid")
+"""
+
+# infinite number of subdomain dots after @
+
+# This is a perfect Email Validation with Regular Expressions
+"""
+import re
+
+email = input("What's your email? ").strip()
+
+if re.search(r"^\w+@(\w+\.)*\w+\.(com|edu|org|net|gov)$", email, re.IGNORECASE):
+    print("Valid")
+else:
+    print("Invalid")
+"""
+
+from email_validator import validate_email, EmailNotValidError
+
+email = input("What's your email? ").strip()
+
+try:
+    # Validate the email and return the normalized form.
+    valid = validate_email(email)
+    email = valid.email
+    print("Valid")
+except EmailNotValidError as e:
+    # email is not valid, exception message is human-readable
+    print("Invalid:", str(e))
