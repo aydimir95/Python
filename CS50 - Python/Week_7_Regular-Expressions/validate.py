@@ -1,5 +1,3 @@
-"""
-
 email = input("What's your email? ").strip()
 
 
@@ -55,7 +53,7 @@ if re.search("@", email):
 else:
     print("Invalid")
 
-"""
+
 
 # we will define patters 
 
@@ -66,7 +64,7 @@ else:
 ? - 0 or 1 repetition
 {m} - m repetitions
 {m,n} - m-n repetitions
-
+"""
 
 
 import re
@@ -149,7 +147,7 @@ if re.search(r"^\w+@\w+\.com$", email):
 else:
     print("Invalid")
 
-"""
+
 """
 \d - decimal digit
 \D - not a decimal digit
@@ -157,8 +155,9 @@ else:
 \S - not a whitespace character
 \w - word character ... as well as numbers and the underscore
 \W - not a word character
+
 """
-"""
+
 
 # to accomodate more domains you can use brackets and pipes
 # (com|org|etc) - | means "or"
@@ -175,7 +174,7 @@ else:
     print("Invalid")
 
 
-"""
+
 """
 A|B - A or B
 (...) - a group
@@ -185,7 +184,7 @@ A|B - A or B
 """
 
 # lower the input or flag it.
-"""
+
 import re
 
 email = input("What's your email? ").strip()
@@ -194,10 +193,10 @@ if re.search(r"^\w+@\w+\.(com|edu|org|net|gov)$", email, re.IGNORECASE):
     print("Valid")
 else:
     print("Invalid")
-"""
+
 # Group the (optional) tollerance for dots after @ 
 
-"""
+
 import re
 
 email = input("What's your email? ").strip()
@@ -206,12 +205,12 @@ if re.search(r"^\w+@(\w+\.)?\w+\.(com|edu|org|net|gov)$", email, re.IGNORECASE):
     print("Valid")
 else:
     print("Invalid")
-"""
+
 
 # infinite number of subdomain dots after @
 
 # This is a perfect Email Validation with Regular Expressions
-"""
+
 import re
 
 email = input("What's your email? ").strip()
@@ -220,7 +219,7 @@ if re.search(r"^\w+@(\w+\.)*\w+\.(com|edu|org|net|gov)$", email, re.IGNORECASE):
     print("Valid")
 else:
     print("Invalid")
-"""
+
 
 from email_validator import validate_email, EmailNotValidError
 
