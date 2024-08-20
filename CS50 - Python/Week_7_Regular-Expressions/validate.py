@@ -219,6 +219,7 @@ if re.search(r"^\w+@(\w+\.)*\w+\.(com|edu|org|net|gov)$", email, re.IGNORECASE):
 else:
     print("Invalid")
 
+# proper email validator
 
 from email_validator import validate_email, EmailNotValidError
 
