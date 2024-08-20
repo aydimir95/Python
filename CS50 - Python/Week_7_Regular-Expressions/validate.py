@@ -179,8 +179,7 @@ else:
 A|B - A or B
 (...) - a group
 (?:...) - non-capturing version
-"""
-"""
+
 """
 
 # lower the input or flag it.
