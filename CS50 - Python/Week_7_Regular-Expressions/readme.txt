@@ -80,3 +80,16 @@ try:
 except EmailNotValidError as e:
     # email is not valid, exception message is human-readable
     print("Invalid:", str(e))
+
+
+# This is how the proper validator works
+
+"""
+
+^[a-zA-Z0-9.!#$&'*+\/=?^_'{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$
+
+"""
+
+Next we are going to explore how to clean up user input, when you use forms for example. You can write code to clean up that form.
+
+Format.py
